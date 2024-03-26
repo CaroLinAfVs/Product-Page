@@ -1,30 +1,32 @@
 function App() {
   return (
-    <div className="flex items-center justify-center h-full bg-[#f2ebe3] px-10 py-10">
-      <div className=" bg-white rounded-2xl flex flex-col max-w-[600px] ">
-        <div className="max-w-[600px] ">
+    <div className="flex bg-[#f2ebe3] justify-center items-center py-20 px-5 h-screen">
+      <div className=" bg-white max-w-[400px] rounded-2xl flex flex-col md:flex-row md:max-w-lg">
+        <div className="flex justify-center md:w-1/2">
           <img
-            className=" w-full h-[450px] rounded-xl"
-            src="https://shophalofiction.com/cdn/shop/products/E5A7743C-6823-45EF-99D1-387300C2584D.jpg?v=1707090226&width=3024"
-            alt="main"
+            className="w-full rounded-t-2xl md:rounded-l-lg md:rounded-tr-none"
+            srcSet="/image-desktop.jpg 600w,/image-mobile.jpg 686w"
+            sizes="(max-width: 600px) 686px, 300px"
+            src="images/image-desktop.jpg"
+            alt="A ring"
           />
         </div>
 
-        <div className=" p-[35px]">
-          <span className="font-bold uppercase tracking-[4px] text-xl text-[#6c7289]">
+        <div className="px-5 py-10 md:w-1/2">
+          <span className="font-bold uppercase tracking-[4px] text-xl md:text-lg text-[#6c7289]">
             Ring
           </span>
 
-          <h1 className=" text-3xl mt-2.5	mb-2.5 text-black font-bold">
+          <h1 className=" text-3xl  mt-2.5	mb-2.5 text-black font-bold">
             Ring of Velaris, high lady of the night court
           </h1>
-          <span className="text-lg font-bold text-[#6c7289] mt-3 mb-3">
+          <span className="text-lg font-bold text-[#6c7289] mt-3 mb-3 md:text-sm">
             Un anillo inspirado en la saga acotar, es una inspiracion a feyre
             the high lady of the night court and the city of starlight, Velaris
           </span>
 
           <div className="flex items-center	mt-3 mb-3 ">
-            <span className="text-[#3c8067] font-bold text-3xl mr-4">
+            <span className="text-[#3c8067] font-bold text-3xl md:text-2xl mr-4">
               $149.99
             </span>
             <span className="text-[#6c7289] line-through	font-bold text-lg">
